@@ -1,0 +1,492 @@
+@use "../variables/colors.scss";
+@use "../variables/texts.scss";
+@use "../variables/hovertools.scss";
+@use "../variables/mixins";
+
+.treatyofwaitangibody{
+
+  margin: 0;
+  overflow-x: hidden;
+
+  background-color: colors.$treatyofwaitangibody;
+  color: colors.$textcolor;
+
+
+}
+
+body.addressbody {}
+
+
+.body::-webkit-scrollbar {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+.treatyofwaitangipagenav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+
+
+
+
+
+.languageexchange{
+display: flex;
+justify-content: space-between;
+align-content: center;
+margin-left: 250px;
+
+
+
+
+}
+
+.maori{
+height: 50px;
+width: 50px;  
+}
+
+a{
+  color: colors.$textcolor;
+  text-decoration: none;
+  font-size: texts.$linksheightdesktop;
+  font-family: texts.$linksfont;
+}
+
+.navlinkstreatyofwaitangi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-left: 170px;
+  text-align: none;
+  color: colors.$textcolor;
+  text-align: none;
+
+}
+
+
+
+.TITLE{
+  font-family: texts.$NunaH1Font;
+  font-size: texts.$NunaH1Size;
+}
+
+
+.UnderNUNA{
+font-size: texts.$paragraphstextsize; 
+font-family: texts.$paragraphsfont;
+}
+
+.ordercontainer{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 73px;
+
+}
+.langchange {
+  margin-right: 100px;
+}
+
+
+.imageheadertreatyofwaitangi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .imagetreatyofwaitangi {
+    height: 100vh;
+    width: 100vw;
+@include mixins.bigimagesdecoration();
+  }
+}
+
+.ordercontainertreatyofwaitangi{
+
+  
+  .ORDERBUTTONTreatyofwaitangi{
+   @include mixins.Treatyofwaitangiorderbutton();
+  }
+}
+
+
+.greetings {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 30px; /* keep to middle */
+  margin-left: 30px;
+}
+
+
+.DESCTITLE{
+font-size: texts.$H1Size;
+font-family: texts.$H1Font;
+}
+
+.Paragraph{
+  font-size: texts.$paragraphstextsize;
+font-family: texts.$paragraphsfont;
+}
+
+.nunagreetingcontainer {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.informationcontents{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  
+  }
+
+.appointmentmainpagetreatyofwaitangi{
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  
+}
+.appointmentimagetreatyofwaitangi{
+  height: 432px;
+  width: 559px;
+  }
+
+
+
+.appointdesc {
+  /* u can change font   */
+}
+
+
+.buttons {
+  height: 259px;
+  width: 457px;
+  background-color: colors.$buttonbackground;
+  border-radius: 30px;
+font-family: texts.$buttonsfonts;
+font-size: texts.$buttonfontsize;
+cursor: hovertools.$hoverpointer;
+
+}
+
+
+
+
+
+.treatyofwaitangidescone {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: none;
+  width: 1000px;
+  margin: 430px;
+  
+}
+
+.Servicetwotreatyofwaitangi{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: none;
+  width: 1000px;
+  margin: 430px;
+}
+
+.socialmedialinkstreatyofwaitangi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1866px;
+}
+.ending-results {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.icon {
+  height: 300px;
+  width: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (width: 500px)  {
+  
+  .HomeBody{
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    width: 257px;
+  
+  }
+  
+  .body::-webkit-scrollbar {
+    display: none;
+    height: 100%;
+    width: 100%;
+  }
+  
+
+  .nunalogo{
+  height: 100px;
+  width: 100px;  
+  margin-left: -77px;
+  }
+
+  .treatyofwaitangipagenav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 68px;
+   }
+
+   .ordercontainertreatyofwaitangi{
+
+  
+    .ORDERBUTTONTreatyofwaitangi{
+     @include mixins.Treatyofwaitangiorderbuttonmobile();
+    }
+  }
+  
+
+
+
+  .languageexchangetreatyofwaitangi{
+
+    
+  margin-left: 31px;
+    
+width: 129px;
+    
+    }
+
+    
+.langchange {
+  margin-right: 9px;
+}
+  
+  .maori{
+    height: 50px;
+    width: 50px; 
+    }
+
+
+    .TITLE{
+
+
+     font-size: texts.$NUNAH1SizeMobile;
+    }
+    
+    .UnderNUNA{
+   font-size: texts.$NUNAUNDERMOBILEANDPARAGRAPH;
+    }
+  
+      
+      
+      
+  
+  
+  .navlinkstreatyofwaitangi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 27px;
+    margin-left: 31px;
+  
+  }
+
+  .navlink{
+  font-size: texts.$linksheightmobile;  
+  }
+  
+
+  
+ 
+  .ordercontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 440px;
+ 
+  width: 100px;
+  }
+  
+ 
+  
+
+  
+  .imageheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+   margin-left: 500px;
+  }
+
+  .image {
+    height: 462px;
+    width: 802px;
+    margin-right: 245px;
+  }
+  .greetings {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 30px; /* keep to middle */
+    margin-left: -89px;
+  }
+  
+  .nunagreetingcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: -236px;
+  }
+  
+  .informationcontents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+    }
+
+    .appointmentH1{
+    font-size: texts.$NUNAH1SizeMobile;
+    }
+
+  
+  
+    .appointmentmainpagetreatyofwaitangi{
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+   margin-left: 22px;
+  }
+
+  .Paragraph{
+  display: flex;
+  justify-content: center;
+  font-size: texts.$NUNAUNDERMOBILEANDPARAGRAPH;;
+  
+  }
+  
+
+  
+  
+  
+  .buttons {
+    height: 105px;
+    width: 202px;
+    
+  }
+  
+
+  .appointmentimagetreatyofwaitangi{
+  height: 300px;
+  width: 228px; 
+  }
+  
+  
+  
+  .treatyofwaitangidescone{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 659px;
+    margin: 360px;
+    margin-right: 793px;
+  }
+  
+
+
+  .serviceimg{
+    height: 221px;
+    width: 185px;  
+  margin-right: 279px;
+  }
+
+  .ServiceParagraph{ 
+  width: 139px;
+  font-size: texts.$NUNAUNDERMOBILEANDPARAGRAPH;
+  }
+
+
+
+  .historyimg{
+    height: 190px;
+    width: 224px;  
+  margin-right: 100px;
+  }
+
+  .Servicetwotreatyofwaitangi{
+
+  margin-bottom: 450px;
+  margin-left: 487px;
+  width: 135px;
+  }
+
+  .servicedesctreatyofwaitangi{
+    height: 2px;
+    margin-left: -95px;
+    width: 126px;
+    gap: 30px;
+  }
+
+  .desctwotreatyofwaitangi{
+  margin-left: 373px;  
+  }
+  .ending-results {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+  }
+
+.socialmedialinkstreatyofwaitangi{
+display: flex;
+width: 627px;
+margin-left: -126px;
+justify-content: space-between;
+align-items: center;  
+}
+
+
+
+  .icon {
+    height: 105px;
+    width: 113px;
+
+  }
+
+  .kakao{
+    height: 108px;
+    width: 96px;  
+    margin-left: 119px;
+  }
+  
+  
+}

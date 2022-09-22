@@ -1,0 +1,172 @@
+@use "../variables/colors.scss";
+@use "../variables/texts.scss";
+@use "../variables/hovertools.scss";
+@use "../variables/borderradius";
+
+
+
+
+
+.navlinkscarddetails{
+display: flex;
+justify-content: center;
+align-content: center;
+gap: 30px;  
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+/* fix all this when your done  */
+.wholepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.creditcard {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.creditcards {
+  height: 30px;
+  width: 30px;
+}
+
+.inputscreditcard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  gap: 30px;
+}
+.inputs-card-details{
+  height: 30px;
+  
+}
+.monthyear{
+gap: 30px;  
+}
+
+.CCV{
+margin-left: 82px;
+margin-top: 30px;
+}
+
+.saveandplaceorder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.youaresafedontworry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.lock {
+  height: 30px;
+  width: 30px;
+}
+
+.ProceedButton{
+  font-size: texts.$smallbuttonsize;
+border-radius: borderradius.$radius;
+font-family: texts.$buttonsfonts;
+background-color: colors.$Proceedbuttoncolorforaddress;
+color: colors.$alltextcolors;
+cursor: hovertools.$hoverpointer;
+}
+
+@media screen and (width: 500px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* fix all this when your done  */
+  .wholepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+  }
+
+  .creditcard {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 43px;
+  }
+
+  .creditcards {
+    height: 30px;
+    width: 30px;
+  }
+
+  .inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+  }
+
+  .userscardname {
+    display: flex;
+    justify-content: space-between;
+    gap: 142px;
+  }
+
+  .monthyearformobile {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .CCVFORMOBILE {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 96px;
+  }
+  .saveandplaceorder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 251px;
+  }
+
+  .youaresafedontworry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .lock {
+    height: 30px;
+    width: 30px;
+  }
+}

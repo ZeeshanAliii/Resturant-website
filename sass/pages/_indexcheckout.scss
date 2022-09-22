@@ -1,0 +1,205 @@
+@use "../variables/colors.scss";
+@use "../variables/texts.scss";
+@use "../variables/hovertools.scss";
+@use "../variables/borderradius";
+
+
+
+
+.CHECKOUTBODY {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.HEADER {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.thecard {
+  height: 144px;
+  width: 450px;
+  margin-top: 150px;
+}
+.cross {
+  height: 30px;
+  width: 30px;
+}
+.textcard {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-right: 113px;
+}
+.actualimg {
+  height: 169px;
+  width: 145px;
+}
+
+.picandtexts {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: colors.$incartordercardbackgroundcolor
+  
+}
+
+.H1CARD{
+font-size: texts.$H1Size;
+font-family: texts.$H1Size;
+
+}
+.PDESC{
+width: 127px;
+font-family: texts.$paragraphssize;
+font-family: texts.$paragraphfontstyletwo;
+}
+
+.textcard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.crossandprice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.cross{
+margin-bottom: 37px;
+margin-left: 10px;  
+}
+
+.TOTALPRICEandproceed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.TOTALPRICEPARA{
+background-color: colors.$totalbackgroundcolor;  
+border-radius: borderradius.$radius;
+color: colors.$alltextcolors;
+margin-left: 79px;
+}
+
+.bottom {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: colors.$bottomofcartbackgroundcolor;
+}
+
+.Proceed {
+  margin-left: 100px;
+  background-color: colors.$Placeorderbackground;
+  border-radius: borderradius.$radius;
+  height: 41px;
+  width: 94px;
+  font-family: texts.$buttonsfonts;
+font-size: texts.$smallbuttonsize;
+  cursor: hovertools.$hoverpointer;
+}
+.cancel {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 41px;
+  width: 94px;
+  margin-top: 79px;
+  background-color: colors.$Cancelorderbackground;
+  font-size: texts.$smallbuttonsize;
+  border-radius: borderradius.$radius;
+  font-family: texts.$buttonsfonts;
+
+cursor: hovertools.$hoverpointer;
+}
+
+@media screen and (width: 500px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .HEADER {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 15px;
+  }
+  .thecard {
+    height: 144px;
+    width: 494px;
+    margin-top: 50px;
+  }
+  .cross {
+    height: 30px;
+    width: 30px;
+  }
+  .textcard {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-right: 0px;
+  }
+  .actualimg {
+    height: 145px;
+    width: 145px;
+  }
+
+  .picandtexts {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: colors.$incartordercardbackgroundcolor;
+  }
+
+  .crossandprice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+
+
+  .TOTALPRICEandproceed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  .bottom {
+    margin-top: 143px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  .proceed {
+    margin-left: 100px;
+  }
+  .cancel {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 70px;
+  }
+}

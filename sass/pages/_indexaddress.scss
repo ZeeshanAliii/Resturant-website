@@ -1,0 +1,193 @@
+@use "../variables/colors.scss";
+@use "../variables/texts.scss";
+@use "../variables/hovertools.scss";
+@use "../variables/borderradius";
+
+.addressbody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 85px;
+}
+
+
+
+.inputs{
+
+height: 26px;
+}
+.inputscontainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.Emailandcheckbox {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.Country {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.users-name {
+  margin-top: 30px;
+  gap: 373px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Addresses {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 30px;
+}
+
+.cityregionpostalcode {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+}
+
+.phonenumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 410px;
+}
+.ProceedButton{
+  font-size: texts.$smallbuttonsize;
+border-radius: borderradius.$radius;
+font-family: texts.$buttonsfonts;
+background-color: colors.$Proceedbuttoncolorforaddress;
+color: colors.$alltextcolors;
+cursor: hovertools.$hoverpointer;
+
+}
+@media screen and (width: 500px) {
+
+  .addressnavlinkmobile{
+  gap: 35px;
+  margin-left: 181px;  
+  }
+  
+  .addressbody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 185px;
+    height: 385px;
+    
+  }
+
+  .H-ONE {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 208px;
+    width: 500px;
+  }
+
+  .inputscontainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .Emailinput {
+    width: 416px;
+    margin-left: 241px;
+  }
+
+  .checkboxcontainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .INFORMATIONANDDELIVERY {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: -188px;
+  }
+
+  .Emailandcheckbox {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .Country {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .users-name {
+    margin-top: 30px;
+    gap: 139px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 195px;
+  }
+
+  .COUNTRYREGION {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 404px;
+    width: 124px;
+  }
+  .Addresses {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 212px;
+    width: 489px;
+    gap: 37px;
+  }
+
+  .cityregionpostalcode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    margin-right: -190px;
+    width: 877px;
+  }
+
+  .CITYINPUT{
+    width: 66px;  
+  }
+
+  .phonenumber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    flex-direction: column;
+    margin-left: 223px;
+  }
+}

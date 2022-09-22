@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <script src="./js/indexcarddetails.js" defer></script>
+  </head>
+  <body>
+    <div class="navlinkscarddetails navlinksmobile">
+      <a href="">
+        <p class="navlink">Home</p>
+      </a>
+      <a href="">
+        <p class="navlink">About</p>
+      </a>
+      <a href="">
+        <p class="navlink">Order</p>
+      </a>
+      <a href="">
+        <p class="navlink">Menu</p>
+      </a>
+    </div>
+    <h1 class="ENTERYOURCARD">Enter your card details for order</h1>
+    <h1>You can use any card, not overseas</h1>
+    <form class="wholepage" action="indexthankyou.html">
+      <!-- <form class="wholepage"> -->
+      <div class="creditcard">
+        <img src="img/VisaCard.jpg" alt="" class="creditcards" />
+        <img src="img/Mastercard.png" alt="" class="creditcards" />
+        <img src="img/JCBCard.png" alt="" class="creditcards" />
+        <img src="img/AmericanExpress.png" alt="" class="creditcards" />
+      </div>
+
+      <div class="inputscreditcard">
+        <div class="userscardname">
+          <input
+            type="text"
+            placeholder="Card Number"
+            class="inputs-card-details"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Card Name"
+            class="inputs-card-details"
+            required
+          />
+        </div>
+        <div class="monthyearcvv">
+          <div class="monthyear monthyearformobile">
+            <input
+              type="text"
+              placeholder="Month"
+              class="inputs-card-details"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Year"
+              class="inputs-card-details"
+              required
+            />
+          </div>
+          <input
+            class="CCVFORMOBILE CCV inputs-card-details"
+            type="text"
+            placeholder="CVV"
+            required
+          />
+        </div>
+        <div class="saveandplaceorder">
+          <p><input type="checkbox" />Save Card Details?</p>
+          <a href="indexTHANKYOU.html">
+            <button class="ProceedButton placeorderbutton">Place Order</button>
+          </a>
+        </div>
+        <div class="youaresafedontworry">
+          <img class="lock" src="./img/lockicon.jpg" alt="" />
+          <p>
+            Your information is secure, we cannot see your card details when you
+            place your order.
+          </p>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

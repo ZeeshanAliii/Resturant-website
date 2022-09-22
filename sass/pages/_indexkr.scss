@@ -1,0 +1,471 @@
+@use "../variables/colors.scss";
+@use "../variables/texts.scss";
+@use "../variables/hovertools.scss";
+
+body {
+
+  margin: 0;
+  overflow-x: hidden;
+
+  background-color: colors.$backgroundcolorforhomeKR;
+  color: colors.$textcolor;
+
+
+}
+
+body.addressbody {}
+
+
+.body::-webkit-scrollbar {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+
+
+
+
+
+.languageexchangemainpage{
+display: flex;
+justify-content: space-between;
+align-content: center;
+margin-left: 250px;
+
+
+
+
+}
+
+.maori{
+height: 50px;
+width: 50px;  
+}
+
+a{
+  color: colors.$textcolor;
+  text-decoration: none;
+  font-size: texts.$linksheightdesktop;
+  font-family: texts.$linksfont;
+}
+
+.navlinkskr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  margin-left: 400px;
+  text-align: none;
+  color: colors.$textcolor;
+  text-align: none;
+}
+
+
+
+
+
+.TITLE{
+  font-family: texts.$NunaH1Font;
+  font-size: texts.$NunaH1Size;
+}
+
+
+.UnderNUNA{
+font-size: texts.$paragraphstextsize; 
+font-family: texts.$paragraphsfont;
+}
+
+.ordercontainer{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 73px;
+}
+.langchange {
+  margin-right: 100px;
+}
+
+.globallanguage{
+height: 30px;
+width: 30px;  
+margin-top: 8px;
+}
+
+
+.imageheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  height: 100vh;
+  width: 100vw;
+}
+.greetings {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 30px; /* keep to middle */
+  margin-left: 30px;
+}
+.ORDERBUTTON{
+width: 311px;
+height: 114px; 
+border-radius: 30px;
+margin-right: 50px;
+background-color: colors.$buttonbackground;
+font-family: texts.$buttonsfonts;
+font-size: texts.$buttonfontsize;
+cursor: hovertools.$hoverpointer;
+}
+
+.DESCTITLE{
+font-size: texts.$H1Size;
+font-family: texts.$H1Font;
+}
+
+.Paragraph{
+  font-size: texts.$paragraphstextsize;
+font-family: texts.$paragraphsfont;
+}
+
+.nunagreetingcontainer {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.informationcontents{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  
+  }
+
+.appointmentmainpagekr {
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin-left: 233px;
+  
+}
+
+.appointdesc {
+  /* u can change font   */
+}
+
+
+.buttons {
+  height: 259px;
+  width: 457px;
+  background-color: colors.$buttonbackground;
+  border-radius: 30px;
+font-family: texts.$buttonsfonts;
+font-size: texts.$buttonfontsize;
+cursor: hovertools.$hoverpointer;
+
+}
+
+
+
+
+.descsone {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: none;
+  width: 1000px;
+  margin: 430px;
+  
+}
+
+.socialmedialinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1866px;
+}
+.ending-results {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.icon {
+  height: 300px;
+  width: 300px;
+}
+
+
+
+
+@media screen and (width: 500px)  {
+  
+  .HomeBody{
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    width: 257px;
+  
+  }
+  
+  .body::-webkit-scrollbar {
+    display: none;
+    height: 100%;
+    width: 100%;
+  }
+  
+
+  .nunalogo{
+  height: 100px;
+  width: 100px;  
+  margin-left: -77px;
+  }
+
+  .mainpagenav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 207px;
+   }
+
+   .ORDERBUTTON{
+    width: 265px;
+    height: 71px;  
+    border-radius: 30px;
+    margin-right: 161px;
+    background-color: colors.$buttonbackground;
+    font-family: texts.$buttonsfonts;
+    font-size: texts.$buttonfontsize;
+    cursor: hovertools.$hoverpointer;
+    }
+
+
+
+
+  .languageexchangemainpage{
+
+   
+  
+  margin-left: 30px;
+    
+width: 30px;
+    
+    }
+
+    
+.langchange {
+  margin-right: 9px;
+}
+  
+  .maori{
+    height: 50px;
+    width: 50px; 
+    }
+
+
+    .TITLE{
+
+
+     font-size: texts.$NUNAH1SizeMobile;
+    }
+    
+    .UnderNUNA{
+   font-size: texts.$NUNAUNDERMOBILEANDPARAGRAPH;
+    }
+  
+      
+      
+      
+  
+  
+  .navlinkskr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 27px;
+    margin-left: 133px;
+  
+  }
+
+  .navlinkkr{
+ width: 115px;
+ display: flex;
+ align-items: center;
+  }
+
+
+
+  
+ 
+  .ordercontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 440px;
+ 
+  width: 100px;
+  }
+  
+ 
+  
+
+  
+  .imageheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+   margin-left: 500px;
+  }
+
+  .image {
+    height: 462px;
+    width: 802px;
+    margin-right: 245px;
+  }
+  .greetings {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 30px; /* keep to middle */
+    margin-left: 30px;
+  }
+  
+  .nunagreetingcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: -236px;
+  }
+  
+  .informationcontents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+    }
+
+    .appointmentH1{
+    font-size: texts.$NUNAH1SizeMobile;
+    }
+
+  
+  
+  .appointmentmainpage{
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+   margin-left: 328px;
+  }
+
+  .Paragraph{
+  display: flex;
+  justify-content: center;
+  font-size: texts.$NUNAUNDERMOBILEANDPARAGRAPH;;
+  
+  }
+  
+
+  
+  
+  
+  .buttons {
+    height: 105px;
+    width: 202px;
+    
+  }
+  
+
+  .appointmentimagekr{
+  height: 230px;
+  width: 228px; 
+  }
+  
+  
+  
+  .descsone {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 659px;
+    margin: 360px;
+    margin-right: -200px;
+  }
+  
+
+
+  .serviceimg{
+    height: 221px;
+    width: 185px;  
+  margin-right: 279px;
+  }
+
+  .ServiceParagraph{ 
+  width: 139px;
+  font-size: texts.$NUNAUNDERMOBILEANDPARAGRAPH;
+  }
+
+
+
+  .historyimgkr{
+    height: 181px;
+    width: 230px;  
+  margin-right: 276px;
+  }
+
+  .Servicetwo{
+  gap: 68px;  
+  margin-bottom: 450px;
+  }
+
+  .ending-results {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+  }
+
+.socialmedialinks{
+display: flex;
+width: 614px;
+margin-left: 126px;
+justify-content: space-between;
+align-items: center;  
+}
+
+
+
+  .icon {
+    height: 105px;
+    width: 113px;
+
+  }
+
+  .kakao{
+    height: 108px;
+    width: 96px;  
+    margin-left: 119px;
+  }
+  
+  
+}

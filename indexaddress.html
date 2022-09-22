@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css" />
+  </head>
+  <body class="addressbody">
+    <div class="navlinksmainpageorderpage navlinksmobile addressnavlinkmobile">
+      <a href="">
+        <p class="navlink">Home</p>
+      </a>
+      <a href="">
+        <p class="navlink">About</p>
+      </a>
+      <a href="">
+        <p class="navlink">Order</p>
+      </a>
+      <a href="">
+        <p class="navlink">Menu</p>
+      </a>
+    </div>
+    <h1 class="H-ONE">Enter You're Contact Details!</h1>
+    <form class="inputcontainer" action="indexcarddetails.html">
+      <div class="Emailandcheckbox">
+        <input
+          class="Emailinput inputs"
+          type="text"
+          placeholder="Email"
+          required
+        />
+        <!-- Set size for this in sass stuff -->
+        <div class="checkboxcontainer">
+          <p class="checkboxinput">
+            <input class="checkboxinput" type="checkbox" />Keep me updated for
+            new dishes!
+          </p>
+        </div>
+      </div>
+      <div class="Country">
+        <p class="INFORMATIONANDDELIVERY">Information and delivery address:</p>
+        <select class="COUNTRYREGION inputs" name="CountryRegion" required>
+          <option value="Country/Region">Country/Region</option>
+          <option value="NewZealand">New Zealand</option>
+          <option value="Korea">South Korea</option>
+          <option value="Brazil">Brazil</option>
+          <option value="Isreal">Isreal</option>
+        </select>
+      </div>
+      <div class="users-name">
+        <input class="inputs" type="text" placeholder="Frist name" required />
+        <input class="inputs" type="text" placeholder="Last name" required />
+      </div>
+      <div class="Addresses">
+        <input class="inputs" type="text" placeholder="Address" required />
+        <input
+          class="inputs"
+          type="text"
+          placeholder="Apartment/suite(optional)"
+        />
+      </div>
+      <div class="cityregionpostalcode">
+        <input class="CITYINPUT" type="text" placeholder="City" required />
+        <input class="inputs" type="text" placeholder="Region" required />
+        <input class="inputs" type="text" placeholder="Postal" required />
+      </div>
+      <div class="phonenumber">
+        <input class="inputs" type="text" placeholder="Phone Number" required />
+        <!-- <a href="indexcarddetails.html"> -->
+        <button type="submit" class="ProceedButton">Proceed...</button>
+        <!-- </a> -->
+      </div>
+    </form>
+  </body>
+</html>

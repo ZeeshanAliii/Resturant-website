@@ -1,0 +1,393 @@
+@use "../variables/colors.scss";
+@use "../variables/texts.scss";
+@use "../variables/hovertools.scss";
+@use "../variables/mixins";
+
+body { 
+  margin: 0;
+  overflow-x: hidden;
+
+  background-color: colors.$backgroundcolorforhomeKR;
+  color: colors.$textcolor;
+}
+
+
+
+.body::-webkit-scrollbar {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+.mainpagenav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.languageexchange {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-left: 250px;
+}
+
+.maori {
+  height: 50px;
+  width: 50px;
+}
+
+a {
+  color: colors.$textcolor;
+  text-decoration: none;
+  font-size: texts.$linksheightdesktop;
+  font-family: texts.$linksfont;
+}
+
+.navlinksmainpage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-left: 400px;
+  text-align: none;
+  color: colors.$textcolor;
+  text-align: none;
+
+  // nesting.
+  .navlink {
+    font-size: texts.$linksfont;
+
+  }
+}
+
+.TITLE {
+  font-family: texts.$NunaH1Font;
+  font-size: texts.$NunaH1Size;
+}
+
+.UnderNUNA {
+  font-size: texts.$paragraphstextsize;
+  font-family: texts.$paragraphsfont;
+}
+
+.ordercontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 73px;
+  .ORDERBUTTON{
+  @include mixins.ORDERBUTTON();  
+  }
+  
+}
+.langchange {
+  margin-right: 100px;
+}
+
+.imageheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .image{
+   
+  @include mixins.bigimagesdecoration();
+  
+  
+  }
+}
+
+
+.greetings {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 30px; /* keep to middle */
+  margin-left: 30px;
+}
+
+
+
+
+.DESCTITLE {
+  font-size: texts.$H1Size;
+  font-family: texts.$H1Font;
+}
+
+.Paragraphmainpage {
+  font-size: texts.$paragraphstextsize;
+  font-family: texts.$paragraphsfont;
+}
+
+.nunagreetingcontainermainpage {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.informationcontents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.appointmentmainpage {
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+
+
+.appointmentimage {
+  width: 411px;
+}
+
+
+.buttonsmainpage {
+  height: 259px;
+  width: 457px;
+  background-color: colors.$buttonbackground;
+  border-radius: 30px;
+  font-family: texts.$buttonsfonts;
+  font-size: texts.$buttonfontsize;
+  cursor: hovertools.$hoverpointer;
+}
+
+.descsone {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: none;
+  width: 1000px;
+  margin: 430px;
+}
+
+.socialmedialinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1866px;
+}
+.ending-results {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon {
+  height: 300px;
+  width: 300px;
+}
+
+@media screen and (width: 500px) {
+  .HomeBody {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    width: 257px;
+  }
+
+  .body::-webkit-scrollbar {
+    display: none;
+    height: 100%;
+    width: 100%;
+  }
+
+  .nunalogomainpage {
+    height: 100px;
+    width: 100px;
+    margin-left: -36px;
+  }
+
+  .mainpagenav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 207px;
+  }
+
+  .ORDERBUTTON {
+    width: 265px;
+    height: 71px;
+    border-radius: 30px;
+    margin-right: 161px;
+    background-color: colors.$buttonbackground;
+    font-family: texts.$buttonsfonts;
+    font-size: texts.$buttonfontsize;
+    cursor: hovertools.$hoverpointer;
+  }
+
+  .languageexchange {
+    border: none;
+
+    margin-left: 30px;
+
+    width: 30px;
+  }
+
+  .langchange {
+    margin-right: 9px;
+  }
+
+  .maori {
+    height: 50px;
+    width: 50px;
+  }
+
+  .TITLE {
+    font-size: texts.$NUNAH1SizeMobile;
+  }
+
+  .UnderNUNA {
+    font-size: texts.$NUNAUNDERMOBILEANDPARAGRAPH;
+  }
+
+  .navlinksmainpage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 27px;
+    margin-left: 24px;
+
+    .navlink {
+      font-size: texts.$linksheightmobile;
+    }
+  }
+
+  .ordercontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 440px;
+    width: 100px;
+  }
+
+  .imageheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 500px;
+  }
+
+  .image {
+    height: 462px;
+    width: 802px;
+    margin-right: 245px;
+  }
+  .greetings {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 30px; /* keep to middle */
+    margin-left: 30px;
+  }
+
+  .nunagreetingcontainermainpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: -350px;
+  }
+
+  .informationcontents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .appointmentH1 {
+    font-size: texts.$informationfontsizemobile;
+  }
+
+  .appointmentmainpage {
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-left: 328px;
+  }
+
+  .Paragraphhistoryformainpage {
+    display: flex;
+    justify-content: center;
+    font-size: texts.$NUNAUNDERMOBILEANDPARAGRAPH;
+    width: 174px;
+  }
+
+  .buttonsmainpage {
+    height: 105px;
+    width: 202px;
+  }
+
+  .appointmentimage {
+    height: 314px;
+    width: 291px;
+  }
+
+  .descsone {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 684px;
+    margin-right: -231px;
+  }
+
+  .serviceimg {
+    height: 221px;
+    width: 185px;
+    margin-right: 161px;
+  }
+
+  .ServiceParagraph {
+    width: 139px;
+    font-size: texts.$NUNAUNDERMOBILEANDPARAGRAPH;
+  }
+
+  .imghistory {
+    height: 199px;
+    width: 198px;
+    margin-right: 286px;
+  }
+
+  .Servicetwo {
+    gap: 68px;
+    margin-bottom: 450px;
+  }
+
+  .ending-results {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .socialmedialinks {
+    display: flex;
+    width: 614px;
+    margin-left: 126px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .icon {
+    height: 105px;
+    width: 113px;
+  }
+
+  .kakao {
+    height: 108px;
+    width: 96px;
+    margin-left: 119px;
+  }
+}

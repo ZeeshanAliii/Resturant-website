@@ -1,0 +1,114 @@
+@use "../variables/colors.scss";
+@use "../variables/texts.scss";
+@use "../variables/hovertools.scss";
+@use "../variables/borderradius";
+
+
+
+.THANKYOUBODY{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: center;
+  background-color: colors.$backgroundcolorofthankyoupage;
+  color: colors.$alltextcolors;
+}
+
+.WholePage {
+  margin-top: 150px;
+}
+
+.HEADER {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textandpicturemobile {
+  display: none;
+}
+.textandpicture {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 900px;
+}
+
+.thankyoumessage {
+  margin-top: 135px;
+  height: 77px;
+  width: 269px;
+  margin-left: 115px;
+  font-family: texts.$paragraphfontstyletwo;
+}
+
+.ty {
+  height: 300px;
+  width: 300px;
+}
+
+
+.BUTTON {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  height: 30px;
+  width: 100px;
+  margin-left: 439px;
+  
+ border-radius: borderradius.$radius;
+ background-color: colors.$thankyoubuttonbackgroundcolor;
+ text-align: center;
+ 
+}
+
+
+
+@media screen and (width: 500px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: center;
+  }
+
+  .WholePage {
+    margin-top: 0px;
+  }
+
+  .HEADER {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .textandpicture {
+    display: none;
+  }
+
+  .textandpicturemobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .thankyoumessage {
+    margin-top: 24px;
+    height: 30px;
+    width: 255px;
+    margin-left: 9px;
+  }
+
+  .ty {
+    height: 300px;
+    width: 300px;
+  }
+  .BUTTON {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 146px;
+    margin-top: 33px;
+  }
+}

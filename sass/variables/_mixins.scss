@@ -1,0 +1,65 @@
+@use "./colors";
+@use "./hovertools";
+@use "./borderradius";
+@use "./texts";
+
+@mixin buttons {
+  // background-color: colors.$buttonbackground;
+  // font-family: texts.$buttonsfonts;
+  // font-size: texts.$buttonfontsize;
+  // cursor: hovertools.$hoverpointer;
+  
+}
+
+
+@mixin bigimagesdecoration{
+border: 1px solid rgb(255, 255, 255)
+// opacity($color: #e3570c) 
+
+}
+
+
+@mixin ORDERBUTTON {
+  width: 265px;
+    height: 71px;
+    border-radius: 30px;
+    background-color: colors.$buttonbackground;
+    font-family: texts.$buttonsfonts;
+    font-size: texts.$buttonfontsize;
+    cursor: hovertools.$hoverpointer;
+  
+}
+
+
+
+@mixin Treatyofwaitangiorderbutton {
+  width: 265px;
+    height: 71px;
+    border-radius: 30px;
+    margin-right: 17px;
+background-color: colors.$treatyofwaitangibuttonbackgroundcolor;
+    font-family: texts.$buttonsfonts;
+    font-size: texts.$buttonfontsize;
+
+  
+}
+
+@mixin Treatyofwaitangiorderbuttonmobile {
+  width: 265px;
+    height: 71px;
+    border-radius: 30px;
+    margin-right: 411px;
+background-color: colors.$treatyofwaitangibuttonbackgroundcolor;
+    font-family: texts.$buttonsfonts;
+    font-size: texts.$buttonfontsize;
+
+  
+}
+
+@mixin foodcardborder {
+ border: 1px solid white;
+}
+
+
+
+

@@ -1,0 +1,165 @@
+@use "../variables/colors.scss";
+@use "../variables/texts.scss";
+@use "../variables/hovertools.scss";
+@use "../variables/mixins";
+body {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.headersection {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 30px;
+}
+
+
+.navlinksmainpageorderpage {
+display: flex;
+justify-content: center;
+align-content: center;
+  gap: 30px
+  ;
+}
+.cartimg {
+  height: 62px;
+  width: 60px;
+  margin-top: 11px;
+  margin-left: 30px;
+  border: none;
+  
+}
+
+.allcards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.card {
+
+  width: 471px;
+
+
+  @include mixins.foodcardborder();
+
+}
+
+.CARTCARDH1{
+  font-family: texts.$CartCardH1;
+
+}
+.CARTCARDPrice{
+  font-family: texts.$CartCardPriceandParagraph;
+}
+.nameandprice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+  width: 470px;
+}
+
+.desc {
+  display: flex;
+  align-items: center;
+
+}
+
+
+.paragraphdesc{
+font-size: texts.$CartCardFoodNamesize;
+}
+.img {
+  height: 145px;
+  width: 145px;
+}
+
+
+
+.fulldesc {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 47px;
+  margin-top: 41px;
+}
+
+
+
+.CartButton{
+background-color: colors.$buttonAddcartbackground;
+border-radius: 30px;
+height: 69px;
+width: 163px;
+font-family: texts.$buttonsfonts;
+cursor: hovertools.$hoverpointer;
+font-size: texts.$CartCardButtonfontsize;
+}
+
+@media screen and (width: 500px) {
+  body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+  }
+
+  .headersection {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .cartimg {
+    height: 62px;
+    width: 60px;
+    margin-top: 11px;
+    margin-left: 30px;
+  }
+
+  .allcards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .card {
+ 
+    width: 471px;
+    color: white;
+  }
+  .nameandprice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    width: 470px;
+  }
+
+  .desc {
+    display: flex;
+    align-items: center;
+  }
+
+  .img {
+    height: 145px;
+    width: 145px;
+  }
+
+  .fulldesc {
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 47px;
+    margin-top: 41px;
+  }
+}

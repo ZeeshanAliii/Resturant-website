@@ -1,0 +1,132 @@
+@use "../variables/colors.scss";
+@use "../variables/texts.scss";
+@use "../variables/hovertools.scss";
+@use "../variables/borderradius";
+
+
+
+.Takeawaybody body {
+  margin: 0%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+}
+
+.the-whole-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Userselection {
+  width: 700px;
+  height: 300px;
+  margin-top: 185px;
+}
+
+.WHATWOULDYOULIKE {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 150px;
+  font-family: texts.$H1Font;
+  font-size: texts.$H1Size;
+  color: colors.$Userschoicealltextcolor;
+}
+
+.pickupimage {
+  display: flex;
+  flex-direction: start;
+  height: 150px;
+}
+
+.userbuttonchoice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 277px;
+  margin-left: 290px;
+  gap: 30px;
+  
+}
+
+.PICKUPBUTTON{
+height: 75px;
+width: 137px;
+font-size: texts.$smallbuttonsize;
+border-radius: borderradius.$radius;
+font-family: texts.$buttonsfonts;
+background-color: colors.$userschoicePickupcolor;
+color: colors.$Userschoicealltextcolor;
+cursor: hovertools.$hoverpointer;
+}
+
+.DELIVERYBUTTON{
+  height: 75px;
+  width: 124px;
+font-size: texts.$smallbuttonsize;
+border-radius: borderradius.$radius;
+font-family: texts.$buttonsfonts;
+background-color: colors.$UsersChoiceDeliverycolor;
+color: colors.$Userschoicealltextcolor;
+cursor: hovertools.$hoverpointer;
+}
+
+
+
+@media screen and (width: 500px) {
+  .Takeawaybody body{
+   
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .the-whole-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Userselection {
+    width: 929px;
+    height: 323px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-left: 328px;
+    margin-top: 9px;
+  }
+
+  .WHATWOULDYOULIKE {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -317px;
+    margin-top: 200px;
+
+
+  }
+
+  .pickupimage {
+    height: 251px;
+    width: 264px;
+    margin-left: 172px;
+  }
+
+  .userbuttonchoice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 430px;
+    margin-top: 50px;
+    margin-left: 93px;
+  }
+}
+
